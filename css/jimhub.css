@@ -1,0 +1,54 @@
+﻿
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+	padding:0;
+
+	background-color: #0080FF;
+	background-image: url("../assets/skybg.png");
+	background-repeat: repeat-x;
+}
+
+#header {
+	margin:0 auto;
+	padding:0;
+}
+
+#navBarBG {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	background-color: #FFFFFF;
+	opacity: 0;
+}
+
+#navBar
+{
+	position: absolute;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+#navBar li
+{
+	float:left;
+	margin-top: 1px;
+	margin-bottom: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.navBarItem
+{
+	display:block;
+	color:#FFFFFF;
+	text-align:center;
+	padding-top: 4px;
+	text-decoration:none;
+	text-shadow:1px 1px 2px #000000;
+	margin: 0;
+}

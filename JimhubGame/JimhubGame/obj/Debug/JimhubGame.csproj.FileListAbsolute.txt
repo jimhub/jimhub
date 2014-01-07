@@ -1,0 +1,6 @@
+C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\bin\JimhubGame.dll.config
+C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\bin\JimhubGame.dll
+C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\bin\JimhubGame.pdb
+C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\obj\Debug\JimhubGame.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\obj\Debug\JimhubGame.dll
+C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\obj\Debug\JimhubGame.pdb
