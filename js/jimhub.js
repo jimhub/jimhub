@@ -44,7 +44,7 @@ function getBlogCategories(blogWidth) {
 			action: "getCategories"
 		},
 		function(data) {
-			console.log(data);
+			//console.log(data);
 
 			jsonData = jQuery.parseJSON(data);
 
@@ -53,8 +53,6 @@ function getBlogCategories(blogWidth) {
 			$("#navBar").css('width', blogWidth);
 
 			var itemWidth = parseInt(blogWidth/jsonData.length);
-
-			console.log(itemWidth);
 
 			var bgImages = [];
 
@@ -74,8 +72,6 @@ function getBlogCategories(blogWidth) {
 			$("#navBar").find(".navBarItem").each(function() {
     			$(this).css('width', itemWidth);
     			$(this).parent().css('height', navBarHeight);
-
-    			console.log(bgImages[$(this).text()]);
 
     			$(this).parent().css('background-image', 'url("'+bgImages[$(this).text()]+'")');
     			$(this).parent().css('background-size', '25%');
