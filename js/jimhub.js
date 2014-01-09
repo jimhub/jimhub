@@ -5,15 +5,18 @@ var headerHeight = 300;
 var navBarHeight = 32;
 
 $(function() {
-	$("#header").css('background-image', 'url("assets/gameheader.png")');
+	//$("#header").css('background-image', 'url("assets/gameheader.png")');
 
+	$("#navBarBG").hide();
 	$("#navBar").hide();
 
 	$(window).resize(repositionings);
 
-	repositionings();
+	
 
 	getBlogCategories(blogWidth);
+	
+	repositionings();
 });
 
 function repositionings() {
@@ -21,20 +24,33 @@ function repositionings() {
 
 	header.width(blogWidth);
 	header.height(headerHeight);
-	
+
 	$("#navBarBG").css('width', blogWidth);
-	$("#navBarBG").css('height', navBarHeight-1);
+	$("#navBarBG").css('height', navBarHeight+1);
 
 	$("#navBar").css('height', navBarHeight);
 
 	var headerOffset = header.offset();
 
 	var navBarLeft = headerOffset.left;
-	var navBarTop = headerHeight-navBarHeight-1;
+	var navBarTop = headerHeight;
 
-	$("#navBarBG").offset({ top: navBarLeft, top: navBarTop});
-	$("#navBar").offset({ top: navBarLeft, top: navBarTop});
+	$("#navBarBG").offset({ left: navBarLeft, top: navBarTop});
+	$("#navBar").offset({ left: navBarLeft, top: navBarTop});
 
+	var contentTop = navBarTop + 40;
+
+	$("#contentBG").offset({ left: navBarLeft, top: contentTop});
+	$("#contentBG").width(blogWidth);
+	$("#contentBG").height($(window).height() - contentTop);
+
+	//matchElementDimensions($("#contentBG"), $("#content"));
+}
+
+function matchElementDimensions(matcher, matchee) {
+	matcher.offset(matchee.offset());
+	matcher.width(matchee.width());
+	matcher.height(matchee.height());
 }
 
 function getBlogCategories(blogWidth) {
@@ -71,6 +87,7 @@ function getBlogCategories(blogWidth) {
 
 			$("#navBar").find(".navBarItem").each(function() {
     			$(this).css('width', itemWidth);
+    			$(this).css('height', navBarHeight);
     			$(this).parent().css('height', navBarHeight);
 
     			$(this).parent().css('background-image', 'url("'+bgImages[$(this).text()]+'")');
@@ -86,8 +103,11 @@ function getBlogCategories(blogWidth) {
     			);
     		});
 
-			$("#navBarBG").fadeTo( 1250, 0.2 );
-    		$("#navBar").show(1000);
+			//$("#navBarBG").fadeTo( 1250, 0.3 );
+			$("#navBarBG").slideDown(1000);
+    		$("#navBar").slideDown(1000);
+
+    		repositionings();
 		}
 	)
 	.error(
