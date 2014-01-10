@@ -4,6 +4,8 @@ var blogWidth = 800;
 var headerHeight = 300;
 var navBarHeight = 32;
 
+var navBarLoaded = false;
+
 $(function() {
 	//$("#header").css('background-image', 'url("assets/gameheader.png")');
 
@@ -11,8 +13,6 @@ $(function() {
 	$("#navBar").hide();
 
 	$(window).resize(repositionings);
-
-	
 
 	getBlogCategories(blogWidth);
 	
@@ -38,13 +38,13 @@ function repositionings() {
 	$("#navBarBG").offset({ left: navBarLeft, top: navBarTop});
 	$("#navBar").offset({ left: navBarLeft, top: navBarTop});
 
-	var contentTop = navBarTop + 40;
+	var contentTop = navBarTop + (navBarLoaded ? 40 : 8);
 
-	$("#contentBG").offset({ left: navBarLeft, top: contentTop});
-	$("#contentBG").width(blogWidth);
-	$("#contentBG").height($(window).height() - contentTop);
+	$("#contentContainer").offset({ left: navBarLeft, top: contentTop});
+	$("#contentContainer").width(blogWidth);
+	$("#contentContainer").height($(window).height() - contentTop-40);
 
-	//matchElementDimensions($("#contentBG"), $("#content"));
+	matchElementDimensions($("#contentBG"), $("#contentContainer"));
 }
 
 function matchElementDimensions(matcher, matchee) {
@@ -103,11 +103,21 @@ function getBlogCategories(blogWidth) {
     			);
     		});
 
+			navBarLoaded = true;
+
 			//$("#navBarBG").fadeTo( 1250, 0.3 );
 			$("#navBarBG").slideDown(1000);
     		$("#navBar").slideDown(1000);
 
-    		repositionings();
+    		$( "#contentContainer" ).animate({
+			    top: "+=32",
+			    height: "-=32"
+			  }, 1000, function() {
+			    // Animation complete.
+			    repositionings();
+			  });
+
+    		
 		}
 	)
 	.error(

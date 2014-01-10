@@ -54,7 +54,13 @@ body {
 	margin: 0;
 }
 
-#contentBG 
+#contentContainer
+{
+	position: absolute;
+	margin-bottom: 40px;
+}
+
+#contentBG
 {
 	background-color: #000000;
 	opacity: 0.3;
