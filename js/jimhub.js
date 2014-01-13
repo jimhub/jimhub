@@ -88,6 +88,8 @@ function getBlogCategories(blogWidth) {
 
 			jsonData = jQuery.parseJSON(data);
 
+			console.log(data);
+			
 			var cats = [];
 
 			var itemWidth = parseInt(blogWidth/jsonData.length);

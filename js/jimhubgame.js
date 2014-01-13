@@ -4,6 +4,8 @@ function preload() {
     game.load.tilemap('level1', 'assets/level1.json', null, Phaser.Tilemap.TILED_JSON);
     game.load.image('tiles', 'assets/tiles.png', 32, 32);
     game.load.image('bg', 'assets/skybg.png');
+
+    game.stage.backgroundColor = 'rgba(0, 0, 0, 0)';
 }
 
 var map;
