@@ -1,4 +1,4 @@
-﻿
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin:0;
@@ -10,21 +10,38 @@ body {
 }
 
 #header {
+	background-image: url("../assets/gameheader.png");
+}
+
+#blogContainer {
 	margin:0 auto;
-	padding:0;
+	padding: 0;
 }
 
 #navBarBG {
 	margin: 0;
 	padding: 0;
-	position: absolute;
 	background-color: #000000;
 	opacity: 0.3;
 }
 
+#navBarSelector {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #FFFFFF;
+	opacity: 0.7;
+}
+
+#subCatsBarSelector {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #FFFFFF;
+	opacity: 0.7;
+}
+
+
 #navBar
 {
-	position: absolute;
 	list-style-type:none;
 	margin:0;
 	padding:0;
@@ -54,14 +71,79 @@ body {
 	margin: 0;
 }
 
+#subCatsContainer
+{
+	height: 18px;
+}
+
+#subCatsBG
+{
+	height: 100%;
+	opacity: 0.5;
+	background-color: #000000;
+}
+
+#subCatsBar
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	border-bottom: 1px solid black;
+}
+
+#subCatsBar li
+{
+	float:left;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100px;
+}
+
+#subCatsBar li a:hover
+{
+	font-weight: bold;
+}
+
+.subCatsBarItem
+{
+	display:block;
+	color:#FFFFFF;
+	font-weight: 400;
+	text-align:center;
+	font-size: 12px;
+	padding-top: 1px;
+	text-decoration: none;
+	text-shadow:1px 1px 2px #000000;
+	margin: 0;
+}
+
+
 #contentContainer
 {
-	position: absolute;
-	margin-bottom: 40px;
+	margin-top: 8px;
+	height: 100px;
 }
 
 #contentBG
 {
 	background-color: #000000;
 	opacity: 0.3;
+	
+	height: 100%;
+}
+
+#content
+{
+	color: white;
+	text-shadow:1px 1px 2px #000000;
+	text-align: center;
+}
+
+#footer
+{
+	margin-top: 8px;
+	text-align: center;
+	font-size: 9px;
+	color: #DDDDDD;
 }

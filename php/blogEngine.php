@@ -15,20 +15,38 @@ else {
 
 	if($a == "getCategories") {
 		
-		$sql = "SELECT displayName, link, bgImg FROM categories ORDER BY displayOrder ASC";
+		$sql = "SELECT displayName, link, bgImg FROM navbar ORDER BY displayOrder ASC";
 
 		$result = mysqli_query($dbConn, $sql);
 
-		$rows = array();
+		echo rowsToJSON($result);
+	}
+	elseif($a == "getSubs") {
+		$filterID = mysqli_real_escape_string($dbConn, $_POST["filterID"]);
 
-		while($row = mysqli_fetch_assoc($result)) {
-			$rows[] = $row;
-		}
+		$sql = "SELECT displayName, filterID from categories WHERE categories.id in
+				(SELECT subcatID FROM subcats, categories WHERE categories.filterID = '$filterID' and subcats.catID = categories.id) 
+				ORDER BY displayName;";
 
-		echo json_encode($rows);
+		$result = mysqli_query($dbConn, $sql);
+
+		echo rowsToJSON($result);
 	}
 }
 
 
 mysqli_close($dbConn);
+
+
+function rowsToJSON($result) {
+
+	$rows = array();
+
+	while($row = mysqli_fetch_assoc($result)) {
+		$rows[] = $row;
+	}
+
+	return json_encode($rows);
+}
+
 ?>

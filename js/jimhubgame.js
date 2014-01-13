@@ -1,4 +1,4 @@
-var game = new Phaser.Game(800, 300, Phaser.CANVAS, 'header', { preload: preload, create: create, update: update });
+game = new Phaser.Game(800, 300, Phaser.CANVAS, 'header', { preload: preload, create: create, update: update });
 
 function preload() {
     game.load.tilemap('level1', 'assets/level1.json', null, Phaser.Tilemap.TILED_JSON);
@@ -29,6 +29,10 @@ function create() {
 
     // layer.debug = true;
 
+    // create rock layer
+    map.createLayer(1);
+
+    // create decoration layer
     map.createLayer(2);
 
     layer.resizeWorld();
