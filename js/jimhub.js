@@ -12,8 +12,9 @@ var loadingInterval;
 var subCats = [];
 
 var curCat = '';
+var curSubCat = '';
 
-var subCatsBarHeight = 18;
+var subCatsBarHeight = 22;
 var subCatsBarWidth = 100;
 
 $(function() {
@@ -34,14 +35,17 @@ $(function() {
 	$("#navBarSelector").hide();
 	$("#navBarContainer").hide();
 	
+	$("#subCatsContainer").height(subCatsBarHeight);
+	$("#subCatsBar").height(subCatsBarHeight);
 	$("#subCatsBar").offset({top: 0});
-	$("#subCatsBarSelector").offset({top: -2});
+
+	$("#subCatsBarSelector").offset({top: subCatsBarHeight-2});
 	$("#subCatsBarSelector").width(subCatsBarWidth);
 	$("#subCatsBarSelector").height(1);
+	
 
 	$("#subCatsBarSelector").hide();
 	$("#subCatsContainer").hide();
-	
 
 	$("#content").height(32);
 	$("#content").offset(
@@ -128,7 +132,7 @@ function getBlogCategories(blogWidth) {
 
 			$("#navBarSelector").width(itemWidth);
 
-			$("#navBarSelector").offset({left: blogWidth - itemWidth});
+			$("#navBarSelector").css({left: blogWidth - itemWidth});
 
 			navBarLoaded = true;
 
@@ -170,6 +174,12 @@ function loadSubCats(catID) {
 
 				$("#subCatsBar").append(catsHtml.join(''));
 
+				$("#subCatsBar").find(".subCatsBarItem").each(function() {
+
+	    			$(this).css('height', navBarHeight);
+
+	    		});
+
 				showSubCats();
 			}
 		}
@@ -191,24 +201,57 @@ function hideSubCats() {
 
 function displaySubCatBlogs(cat, itemX) {
 
-	$("#subCatsBarSelector").show();
-	$("#subCatsBarSelector").animate({
-		left: itemX
-	}, 300);
+	if(cat == curSubCat) {
+		cat = '';
+	}
+
+	curSubCat = cat;
+
+	var subCatSel = $("#subCatsBarSelector");
+
+	if(cat == '') {
+		
+
+		subCatSel.css({left: blogWidth - subCatSel.width()});
+		subCatSel.hide();
+	}
+	else {
+		subCatSel.show();
+		subCatSel.animate({
+			left: itemX
+		}, 300);
+	}
+	
 
 	return false;
 }
 
 function navBarClick(cat, catName, itemX) {
 
+	curSubCat = '';
+
+	if(curCat == catName) {
+		catName = '';
+	}
+
 	curCat = catName;
 
-	$("#navBarSelector").show();
-	$("#navBarSelector").animate({
-		left: itemX
-	}, 300);
+	if(catName == '') {
+		var navBarSel = $("#navBarSelector");
 
-	loadSubCats(cat);
+		navBarSel.css({left: blogWidth - navBarSel.width()});
+		navBarSel.hide();
+
+		hideSubCats();
+	}
+	else {
+		$("#navBarSelector").show();
+		$("#navBarSelector").animate({
+			left: itemX
+		}, 300);
+
+		loadSubCats(cat);
+	}
 
 	//clearInterval(loadingInterval);
 	var content = $("#content");
