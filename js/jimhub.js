@@ -17,6 +17,9 @@ var curSubCat = '';
 var subCatsBarHeight = 22;
 var subCatsBarWidth = 100;
 
+var subCatLists = [];
+var subCatHTMLCache = [];
+
 $(function() {
 	//$("#header").css('background-image', 'url("assets/gameheader.png")');
 	
@@ -47,11 +50,10 @@ $(function() {
 	$("#subCatsBarSelector").hide();
 	$("#subCatsContainer").hide();
 
-	$("#content").height(32);
-	$("#content").offset(
-		{ top: $("#contentContainer").height()/2 - 8}
-		);
-	$("#content").text("loading");
+	$("#content").offset({top: 28});
+
+	$("#contentLeft").text("loading");
+	$("#contentLeft").offset({top: 50});
 	
 	loadingInterval = setInterval(loadingAnim, 250);
 	
@@ -60,8 +62,6 @@ $(function() {
 	getBlogCategories(blogWidth);
 	
 	repositionings();
-
-	
 });
 
 function repositionings() {
@@ -70,9 +70,9 @@ function repositionings() {
 	header.width(header.parent().width());
 	header.height(headerHeight);
 
-	$("#contentContainer").width(blogWidth);
+//	$("#contentContainer").width(blogWidth);
 
-	//matchElementDimensions($("#contentBG"), $("#contentContainer"));
+	//matchElementDimensions($("#content"), $("#contentBG"));
 }
 
 function matchElementDimensions(matcher, matchee) {
@@ -92,8 +92,6 @@ function getBlogCategories(blogWidth) {
 
 			jsonData = jQuery.parseJSON(data);
 
-			console.log(data);
-			
 			var cats = [];
 
 			var itemWidth = parseInt(blogWidth/jsonData.length);
@@ -101,14 +99,18 @@ function getBlogCategories(blogWidth) {
 			var bgImages = [];
 
 			$.each(jsonData, function(i, cat) {
+				var filterID = cat.link.substr(1, cat.link.length-1);
+
 				if(cat.link[0] == '#') {
-					cats.push('<li><a class="navBarItem" href="" onclick="return navBarClick(\''+cat.link.substr(1, cat.link.length-1)+'\', \''+cat.displayName+'\', '+(itemWidth*i)+');">' + cat.displayName + '</a></li>');
+					cats.push('<li><a class="navBarItem" href="" onclick="return navBarClick(\''+filterID+'\', \''+cat.displayName+'\', '+(itemWidth*i)+');">' + cat.displayName + '</a></li>');
 				}
 				else {
 					cats.push('<li><a class="navBarItem" href="'+cat.link+'" target="_blank">' + cat.displayName + '</a></li>');
 				}
 
 				bgImages[cat.displayName] = cat.bgImg;
+
+				loadSubCats(filterID);
 			});
 
 			$("#navBar").append(cats.join(''));
@@ -148,8 +150,6 @@ function getBlogCategories(blogWidth) {
 }
 
 function loadSubCats(catID) {
-	hideSubCats();
-
 	$.post(
 		"php/blogEngine.php",
 		{
@@ -159,29 +159,7 @@ function loadSubCats(catID) {
 		function(data) {
 			jsonData = jQuery.parseJSON(data);
 
-			subCats = jsonData;
-
-
-			if(subCats.length > 0) {
-				var catsHtml = [];
-
-				$("#subCatsBar").empty();
-
-				$.each(subCats, function(i, cat) {
-						catsHtml.push('<li><a class="subCatsBarItem" href="" onclick="return displaySubCatBlogs(\''+cat.filterID+'\', '+(i*subCatsBarWidth)+');">' + cat.displayName + '</a></li>');
-					}
-				);
-
-				$("#subCatsBar").append(catsHtml.join(''));
-
-				$("#subCatsBar").find(".subCatsBarItem").each(function() {
-
-	    			$(this).css('height', navBarHeight);
-
-	    		});
-
-				showSubCats();
-			}
+			subCatLists[catID] = jsonData;
 		}
 	)
 	.error(
@@ -189,14 +167,48 @@ function loadSubCats(catID) {
 	);
 }
 
-function showSubCats() {
-	$("#subCatsContainer").slideDown(200);
+function showSubCats(catID) {
+	if(subCatLists[catID] != null && subCatLists[catID].length > 0) {
+		
+		$("#subCatsBar").empty();
+
+		if(subCatHTMLCache[catID] == null) {		
+			var catsHtml = [];
+
+			$.each(subCatLists[catID], function(i, cat) {
+					catsHtml.push('<li><a class="subCatsBarItem" href="" onclick="return displaySubCatBlogs(\''+cat.filterID+'\', '+(i*subCatsBarWidth)+');">' + cat.displayName + '</a></li>');
+				}
+			);
+
+			subCatHTMLCache[catID] = catsHtml.join('');
+		}
+
+		$("#subCatsBar").append(subCatHTMLCache[catID]);
+
+		$("#subCatsBar").find(".subCatsBarItem").each(function() {
+
+			$(this).css('height', navBarHeight);
+
+		});
+
+		$("#subCatsContainer").slideDown(200);
+	}
 }
 
 function hideSubCats() {
 	$("#subCatsBarSelector").css({left: blogWidth-subCatsBarWidth});
 	$("#subCatsBarSelector").hide();
 	$("#subCatsContainer").slideUp(200);
+}
+
+function hideAndShowSubCats(catID) {
+	$("#subCatsBarSelector").css({left: blogWidth-subCatsBarWidth});
+	$("#subCatsBarSelector").hide();
+	$("#subCatsContainer").slideUp(200,
+		function() {
+			showSubCats(catID)
+		}
+	);
 }
 
 function displaySubCatBlogs(cat, itemX) {
@@ -250,7 +262,7 @@ function navBarClick(cat, catName, itemX) {
 			left: itemX
 		}, 300);
 
-		loadSubCats(cat);
+		hideAndShowSubCats(cat);
 	}
 
 	//clearInterval(loadingInterval);
@@ -291,7 +303,7 @@ function loadingAnim() {
 	for(var i=0; i < numDots; i++)
 		dotString += ".";
 	
-	$("#content").text(dotString+"loading"+dotString);
+	$("#contentLeft").text(dotString+"loading"+dotString);
 	
 	numDots = (numDots+1) % 4;
 }

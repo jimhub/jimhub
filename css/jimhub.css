@@ -112,7 +112,7 @@ body {
 	font-weight: 400;
 	text-align:center;
 	font-size: 12px;
-	padding-top: 2px;
+	padding-top: 3px;
 	text-decoration: none;
 	text-shadow:1px 1px 2px #000000;
 	margin: 0;
@@ -125,6 +125,13 @@ body {
 	height: 100px;
 }
 
+#content 
+{
+	height: 100%;
+
+	border: 1px solid;
+}
+
 #contentBG
 {
 	background-color: #000000;
@@ -133,12 +140,17 @@ body {
 	height: 100%;
 }
 
-#content
+#contentLeft
 {
+	margin: 0;
+	padding: 0;
 	color: white;
 	text-shadow:1px 1px 2px #000000;
 	text-align: center;
+
+	border: 1px solid;
 }
+
 
 #footer
 {
