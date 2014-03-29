@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6fdd37d2-9399-420f-8be7-583e1645aaca" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app.js" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame.sln" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame.v12.suo" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\Boot.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\Boot.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\Boot.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\Game.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\Game.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\Game.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\JimhubGame.csproj" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\JimhubGame.csproj.user" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\Level1.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\MainMenu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\MainMenu.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\MainMenu.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\Player.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\Preloader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\Preloader.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\Preloader.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\app.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\app.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\app.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\assets.zip" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\assets\level1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\assets\loader.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\assets\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\assets\simon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\assets\title.mp3" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\assets\titlepage.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\bin\JimhubGame.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\bin\JimhubGame.dll.config" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\bin\JimhubGame.pdb" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\default.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\jQueryTest.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\jquery.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\obj\Debug\JimhubGame.csproj.FileListAbsolute.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\obj\Debug\JimhubGame.csprojResolveAssemblyReference.cache" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\obj\Debug\JimhubGame.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\obj\Debug\JimhubGame.pdb" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\phaser.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\phaser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\phaser.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\phaser2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\web.Debug.config" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\web.Release.config" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\JimhubGame\JimhubGame\web.config" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\js\phaser.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\jimhub\site\index.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jimhubgame.js" afterPath="$PROJECT_DIR$/js/jimhubgame.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/phaser.js" afterPath="$PROJECT_DIR$/js/phaser.js" />
+    </list>
+    <ignored path="jimhub.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="jimhub" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="172" column="38" selection-start="8512" selection-end="8512" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="3366">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blogEngine.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/blogEngine.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.33333334" vertical-offset="36" max-vertical-offset="969">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jimhubgame.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jimhubgame.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1479">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/js/jimhubgame.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="928" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jimhub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jimhub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jimhub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jimhub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jimhub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jimhub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jimhub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost/jimhub/index.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fdd37d2-9399-420f-8be7-583e1645aaca" name="Default" comment="" />
+      <created>1395707967874</created>
+      <updated>1395707967874</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="928" height="1080" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18967453" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19348055" sideWeight="0.7811448" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19348055" sideWeight="0.21885522" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="38" selection-start="8512" selection-end="8512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3366">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/blogEngine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="27" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jimhubgame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="3366">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jimhubgame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="38" selection-start="8512" selection-end="8512" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="3366">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/dbconn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/blogEngine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.33333334" vertical-offset="36" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
