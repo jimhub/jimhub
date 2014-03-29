@@ -2,3 +2,6 @@
 php/dbconn.php
 /nbproject/private/
 mysqlConn.js
+node_modules/
+nbproject/
+.idea/
