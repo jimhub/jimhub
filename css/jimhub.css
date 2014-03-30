@@ -16,13 +16,14 @@ body {
 #blogContainer {
 	margin:0 auto;
 	padding: 0;
+    width: 800px;
 }
 
 #navBarBG {
 	margin: 0;
 	padding: 0;
-	background-color: #000000;
-	opacity: 0.3;
+	background-color: rgba(0, 0, 0, 0.3);
+    height: 32px;
 }
 
 #navBarSelector {
@@ -30,6 +31,8 @@ body {
 	padding: 0;
 	border-bottom: 1px solid #FFFFFF;
 	opacity: 0.7;
+    position: relative;
+    top: -2px;
 }
 
 #subCatsBarSelector {
@@ -37,6 +40,7 @@ body {
 	padding: 0;
 	border-bottom: 1px solid #FFFFFF;
 	opacity: 0.7;
+
 }
 
 
@@ -48,6 +52,8 @@ body {
 	overflow:hidden;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+    height: 30px;
+    width: 100%;
 }
 
 #navBar li
@@ -57,6 +63,7 @@ body {
 	margin-bottom: 0;
 	background-repeat: no-repeat;
 	background-position: center;
+    display:inline-block;
 }
 
 .navBarItem

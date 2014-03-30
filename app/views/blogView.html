@@ -1,0 +1,26 @@
+
+<div id="navBarContainer">
+    <div id="navBarBG">
+        <ul id="navBar">
+            <li ng-repeat="cat in blogCategories" style="width: {{ 800 / blogCategories.length }}px" ng-click="selectCat(123)">
+                <a href="{{ cat.link }}" class="navBarItem">{{ cat.displayName }}</a>
+            </li>
+        </ul>
+        <div id="navBarSelector" ng-show="showNavBarSelector" style="width: {{ 800 / blogCategories.length }}px"></div>
+    </div>
+</div>
+
+<div id="subCatsContainer">
+    <div id="subCatsBG"></div>
+    <ul id="subCatsBar"></ul>
+    <div id="subCatsBarSelector"></div>
+</div>
+
+<div id="contentContainer">
+    <div id="contentBG">
+    </div>
+    <div id="content">
+        <div id="contentLeft"></div>
+        <div id="contentRight"></div>
+    </div>
+</div>
