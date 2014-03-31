@@ -17,10 +17,22 @@
 	    <div id="gameCanvas">
 	    </div>
 	    
+        <div id="navBarContainer" ng-controller="NavBarController">
+            <div id="navBarBG">
+                <ul id="navBar">
+                    <li ng-repeat="cat in blogCategories" ng-style="{ width: navBarItemWidth+'px' }" ng-click="selectCat(cat.xPos)">
+                        <a href="{{ cat.link }}" class="navBarItem" target="{{ cat.target }}">{{ cat.displayName }}</a>
+                    </li>
+                </ul>
+                <div id="navBarSelector" ng-show="showNavBarSelector"
+                     ng-style="{width: navBarItemWidth+'px', left: navBarSelectorPos+'px'}" class="sliderAnim" ng-if="slideMeNow"></div>
+            </div>
+        </div>
+
 	   <div ng-view></div>
 	    
 	    <div id="footer">
-	    	jimhub.io // future of internet (not really) // design, code, and trial-and-error &copy; 2014 by James Liljenquist
+	    	jimhub.io // &copy; 2014 by James Liljenquist // powered by <a href="http://angularjs.org/" target="_blank">AngularJS</a>&nbsp;&lt;3
 	    </div>
     </div>
 
@@ -30,9 +42,11 @@
 
     <script src="app/app.js"></script>
     <script src="app/services/values.js"></script>
+    <script src="app/directives/animations.js"></script>
 
     <script src="app/services/jimhubFactory.js"></script>
 
+    <script src="app/controllers/navBarController.js"></script>
     <script src="app/controllers/blogsController.js"></script>
 </body>
 </html>
