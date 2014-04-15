@@ -1,6 +1,7 @@
 
 
 var express = require('express'),
+
     app = express();
 
 app.configure(function() {
@@ -40,13 +41,23 @@ mysql.open(function(conn, err) {
         console.log('MySQL connection established.');
 
         // Load the main blog categories for the nav bar
-        conn.query('SELECT displayName, link, bgImg FROM navbar ORDER BY displayOrder ASC', function(err, rows, fields) {
-            if (err) throw err;
-            blogCats = rows;
-        });
+        conn.query(
+            'SELECT displayName, link, bgImg FROM navbar ORDER BY displayOrder ASC', 
+            function(err, rows, fields) {
+                if (err) throw err;
+                blogCats = rows;
+                
+                for(var i=0; i < blogCats.length; i++) {
+                    blogSubCats[blogCats[i].displayName] = [];
+                }
+            }
+        );
+        
+        
 
     }
 });
 
 blogCats = [];
+blogSubCats = {};
 blogs = [];

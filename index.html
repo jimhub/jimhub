@@ -3,7 +3,7 @@
 <html lang="en" ng-app="jimhubApp">
 <head>
     <meta charset="utf-8" />
-    <title>jimhub.io // games and things</title>
+    <title>jimhub.io // games and things by james and things</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/jimhub.css" type="text/css" />
@@ -25,7 +25,7 @@
                     </li>
                 </ul>
                 <div id="navBarSelector" ng-show="showNavBarSelector"
-                     ng-style="{width: navBarItemWidth+'px', left: navBarSelectorPos+'px'}" class="sliderAnim" ng-if="slideMeNow"></div>
+                     ng-style="{width: navBarItemWidth+'px'}" slide-me="navBarSelectorPos"></div>
             </div>
         </div>
 
@@ -39,10 +39,13 @@
     <script src="js/angular.js"></script>
     <script src="js/angular-route.js"></script>
     <script src="js/angular-animate.js"></script>
-
+    
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+    
     <script src="app/app.js"></script>
     <script src="app/services/values.js"></script>
-    <script src="app/directives/animations.js"></script>
+    <script src="app/directives/slideme.js"></script>
 
     <script src="app/services/jimhubFactory.js"></script>
 
