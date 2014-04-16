@@ -7,12 +7,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/jimhub.css" type="text/css" />
-
-<<<<<<< HEAD
     <script src="js/phaser.min.js"></script>
-=======
-    <script src="js/phaser.js"></script>
->>>>>>> 03e5731523dec7e36da1b55c92cd401ebfa537f4
     <script src="js/jimhubgame.js"></script>
     
 </head>
@@ -24,18 +19,14 @@
         <div id="navBarContainer" ng-controller="NavBarController">
             <div id="navBarBG">
                 <ul id="navBar">
-<<<<<<< HEAD
                     <li ng-repeat="cat in navBarItems" ng-style="{ width: navBarItemWidth+'px' }" ng-click="selectCat(cat.xPos)">
-=======
-                    <li ng-repeat="cat in blogCategories" ng-style="{ width: navBarItemWidth+'px' }" ng-click="selectCat(cat.xPos)">
->>>>>>> 03e5731523dec7e36da1b55c92cd401ebfa537f4
+
                         <a href="{{ cat.link }}" class="navBarItem" target="{{ cat.target }}">{{ cat.displayName }}</a>
                     </li>
                 </ul>
                 <div id="navBarSelector" ng-show="showNavBarSelector"
                      ng-style="{width: navBarItemWidth+'px'}" slide-me="navBarSelectorPos"></div>
             </div>
-<<<<<<< HEAD
             
             <div id="subCatsContainer" ng-show="showSubCats">
                 <div id="subCatsBG">
@@ -47,8 +38,6 @@
                     <div id="subCatsBarSelector"></div>
                 </div>
             </div>
-=======
->>>>>>> 03e5731523dec7e36da1b55c92cd401ebfa537f4
         </div>
 
 	   <div ng-view></div>

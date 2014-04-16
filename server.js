@@ -51,8 +51,7 @@ mysql.open(function(conn, err) {
     }
     else {
         console.log('MySQL connection established.');
-
-<<<<<<< HEAD
+        
         var findCatByID = function(id) {
             for(var i=0; i < blogCats.length; i++) {
                 if(blogCats[i].id == id)
@@ -63,14 +62,10 @@ mysql.open(function(conn, err) {
         };
         
         // Load the items for the nav bar
-=======
-        // Load the main blog categories for the nav bar
->>>>>>> 03e5731523dec7e36da1b55c92cd401ebfa537f4
         conn.query(
             'SELECT displayName, link, bgImg FROM navbar ORDER BY displayOrder ASC', 
             function(err, rows, fields) {
                 if (err) throw err;
-<<<<<<< HEAD
                 
                 navBar = rows;
             }
@@ -108,18 +103,6 @@ mysql.open(function(conn, err) {
                         console.log("BAD SUB CAT ID");
                     }
                 }
-=======
-                blogCats = rows;
-                
-                for(var i=0; i < blogCats.length; i++) {
-                    blogSubCats[blogCats[i].displayName] = [];
-                }
-            }
-        );
-        
-        
->>>>>>> 03e5731523dec7e36da1b55c92cd401ebfa537f4
-
             }
         );
     }

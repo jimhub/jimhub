@@ -100,7 +100,6 @@ body a:visited {
     color: #FFFFFF;
 }
 
-<<<<<<< HEAD
 #subCatsContainer
 {
 
@@ -189,93 +188,4 @@ body a:visited {
 	font-size: 9px;
 	color: #DDDDDD;
 }
-=======
-#subCatsContainer
-{
 
-}
-
-#subCatsBG
-{
-	height: 100%;
-	opacity: 0.5;
-	background-color: #000000;
-}
-
-#subCatsBar
-{
-	list-style-type:none;
-	margin:0;
-	padding:0;
-	overflow:hidden;
-	border-bottom: 1px solid black;
-}
-
-#subCatsBar li
-{
-	float:left;
-	margin-top: 0;
-	margin-bottom: 0;
-	width: 100px;
-}
-
-#subCatsBar li a:hover
-{
-	font-weight: bold;
-}
-
-.subCatsBarItem
-{
-	display:block;
-	color:#FFFFFF;
-	font-weight: 400;
-	text-align:center;
-	font-size: 12px;
-	padding-top: 3px;
-	text-decoration: none;
-	text-shadow:1px 1px 2px #000000;
-	margin: 0;
-}
-
-
-#contentContainer
-{
-	margin-top: 8px;
-	height: 100px;
-}
-
-#content 
-{
-	height: 100%;
-
-	border: 1px solid;
-}
-
-#contentBG
-{
-	background-color: #000000;
-	opacity: 0.3;
-	
-	height: 100%;
-}
-
-#contentLeft
-{
-	margin: 0;
-	padding: 0;
-	color: white;
-	text-shadow:1px 1px 2px #000000;
-	text-align: center;
-
-	border: 1px solid;
-}
-
-
-#footer
-{
-	margin-top: 8px;
-	text-align: center;
-	font-size: 9px;
-	color: #DDDDDD;
-}
->>>>>>> 03e5731523dec7e36da1b55c92cd401ebfa537f4
