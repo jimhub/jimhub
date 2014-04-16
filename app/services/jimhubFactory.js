@@ -6,12 +6,26 @@
 
         var factory = {};
 
+        factory.getNavBarItems = function() {
+            return $http.get('/navbar');
+        };
+
         factory.getBlogCategories = function() {
             return $http.get('/blogCategories');
         };
-
-        factory.getBlogs = function() {
-            return $http.get('/blogs');
+        
+        factory.getBlogs = function(blogCat, blogID) {
+            if(blogCat) {
+                if(blogID) {
+                    return $http.get('/blogs/'+blogCat+'/'+blogID);
+                }
+                else {
+                    return $http.get('/blogs/'+blogCat);
+                }
+            }
+            else {
+                return $http.get('/blogs');
+            }
         };
 
         return factory;

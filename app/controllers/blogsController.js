@@ -1,13 +1,12 @@
 
 (function() {
 
-    var BlogsController = function($scope, jimhubFactory) {
+    var BlogsController = function($scope, jimhubFactory, $routeParams) {
 
         $scope.blogs = [];
-
-
+        
         function init() {
-            jimhubFactory.getBlogs()
+            jimhubFactory.getBlogs($routeParams.blogCat, $routeParams.blogID)
                 .success(function(blogs) {
                     $scope.blogs = blogs;
                 })
@@ -21,7 +20,7 @@
     };
 
     // Parameter injection to avoid trouble from minification
-    BlogsController.$inject = ['$scope', 'jimhubFactory'];
+    BlogsController.$inject = ['$scope', 'jimhubFactory', '$routeParams'];
 
     angular.module('jimhubApp')
         .controller('BlogsController', BlogsController);
